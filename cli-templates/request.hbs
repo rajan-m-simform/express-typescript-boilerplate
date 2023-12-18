@@ -1,0 +1,7 @@
+import { object, string,z } from "zod";
+
+export const {{actualName}} = object({
+  name: string(),
+});
+
+export type {{actualName}} = z.infer<typeof {{actualName}}>
